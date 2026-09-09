@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JavaScript</title>
+
+        <style>
+            h1 {
+                width: 220px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <noscript>
+            <h1>JavaScript is not enabled in your browser.</h1>
+        </noscript>
+        <h1 onclick="this.innerText='Mouse Clicked!';this.style.color='#B200ED'">Active Heading!</h1>
+        
+        <script>
+            document.getElementsByTagName('h1')[0].onmouseover=
+            function( ){
+                this.innerText='MOUSE OVER';this.style.color='#6F2DA8';}
+        </script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
